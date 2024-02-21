@@ -1,0 +1,15 @@
+/* EDITING & READONLY */
+.editonly {
+    display: block;
+}
+
+.editonly-flex, .toolbar > .editonly-flex {
+    display: flex;
+}
+
+/* PAGE STYLING */
+
+#createLoadingIcon {
+    /* Image */
+    filter: grayscale(1) brightness(1.2);
+}

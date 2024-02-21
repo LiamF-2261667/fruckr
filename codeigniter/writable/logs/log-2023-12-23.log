@@ -1,0 +1,341 @@
+CRITICAL - 2023-12-23 13:42:39 --> Call to undefined method App\Models\UserModel::isOwner()
+in APPPATH/Controllers/FoodtruckController.php on line 48.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruckPage()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 13:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 13:49:50 --> Call to undefined method App\Models\UserModel::isOwner()
+in APPPATH/Controllers/FoodtruckController.php on line 48.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruckPage()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 13:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 13:56:11 --> Undefined variable $foodtruck
+in APPPATH/Views/Foodtruck_Create.php on line 9.
+ 1 APPPATH/Views/Foodtruck_Create.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/app/Views/Foodtruck_Create.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1204): view()
+ 6 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 7 APPPATH/Controllers/FoodtruckController.php(53): App\Controllers\BaseController->viewingPage()
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruckPage()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 13:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 13:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:17:41 --> Call to undefined method App\Models\UserModel::isOwner()
+in APPPATH/Controllers/FoodtruckController.php on line 67.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 14:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:29:57 --> App\Models\FoodtruckProfileModel::createNewProfile(): Argument #1 ($foodtruckId) must be of type int, stdClass given, called in /app/app/Models/FoodtruckModel.php on line 186
+in APPPATH/Models/FoodtruckProfileModel.php on line 106.
+ 1 APPPATH/Models/FoodtruckModel.php(186): App\Models\FoodtruckProfileModel::createNewProfile()
+ 2 APPPATH/Controllers/FoodtruckController.php(73): App\Models\FoodtruckModel::create()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 14:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:38:20 --> App\Models\FoodtruckModel::create(): Argument #2 ($owner) must be of type App\Models\FoodtruckOwnerModel, int given, called in /app/app/Controllers/FoodtruckController.php on line 73
+in APPPATH/Models/FoodtruckModel.php on line 155.
+ 1 APPPATH/Controllers/FoodtruckController.php(73): App\Models\FoodtruckModel::create()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 14:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:38:52 --> App\Models\FoodtruckProfileModel::createNewProfile(): Argument #1 ($foodtruckId) must be of type int, stdClass given, called in /app/app/Models/FoodtruckModel.php on line 189
+in APPPATH/Models/FoodtruckProfileModel.php on line 106.
+ 1 APPPATH/Models/FoodtruckModel.php(189): App\Models\FoodtruckProfileModel::createNewProfile()
+ 2 APPPATH/Controllers/FoodtruckController.php(73): App\Models\FoodtruckModel::create()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 14:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:39:24 --> Exception::__construct(): Argument #1 ($message) must be of type string, stdClass given
+in APPPATH/Exceptions/InvalidInputException.php on line 21.
+ 1 APPPATH/Exceptions/InvalidInputException.php(21): Exception->__construct()
+ 2 APPPATH/Models/FoodtruckModel.php(185): App\Exceptions\InvalidInputException->__construct()
+ 3 APPPATH/Controllers/FoodtruckController.php(73): App\Models\FoodtruckModel::create()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 14:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:40:01 --> Object of class stdClass could not be converted to string
+in APPPATH/Models/FoodtruckModel.php on line 185.
+ 1 APPPATH/Controllers/FoodtruckController.php(73): App\Models\FoodtruckModel::create()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 14:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-23 14:42:52 --> mysqli_sql_exception: Column 'profileImg' cannot be null in /app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/FoodtruckProfileModel.php(121): App\Database\DatabaseHandler->query()
+#5 /app/app/Models/FoodtruckModel.php(189): App\Models\FoodtruckProfileModel::createNewProfile()
+#6 /app/app/Controllers/FoodtruckController.php(73): App\Models\FoodtruckModel::create()
+#7 /app/system/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+#8 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-23 14:42:53 --> Column 'profileImg' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/FoodtruckProfileModel.php(121): App\Database\DatabaseHandler->query()
+ 3 APPPATH/Models/FoodtruckModel.php(189): App\Models\FoodtruckProfileModel::createNewProfile()
+ 4 APPPATH/Controllers/FoodtruckController.php(73): App\Models\FoodtruckModel::create()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 14:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-23 14:44:37 --> mysqli_sql_exception: Column 'extraInfo' cannot be null in /app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/FoodtruckProfileModel.php(121): App\Database\DatabaseHandler->query()
+#5 /app/app/Models/FoodtruckModel.php(189): App\Models\FoodtruckProfileModel::createNewProfile()
+#6 /app/app/Controllers/FoodtruckController.php(73): App\Models\FoodtruckModel::create()
+#7 /app/system/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+#8 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-23 14:44:38 --> Column 'extraInfo' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/FoodtruckProfileModel.php(121): App\Database\DatabaseHandler->query()
+ 3 APPPATH/Models/FoodtruckModel.php(189): App\Models\FoodtruckProfileModel::createNewProfile()
+ 4 APPPATH/Controllers/FoodtruckController.php(73): App\Models\FoodtruckModel::create()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 14:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:45:16 --> Call to a member function getId() on null
+in APPPATH/Controllers/FoodtruckController.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 14:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:48:56 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 52432896 bytes)
+in SYSTEMPATH/Debug/Toolbar.php on line 168.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-23 14:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:50:07 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 52432896 bytes)
+in SYSTEMPATH/Debug/Toolbar.php on line 168.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-23 14:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:51:34 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 60821504 bytes)
+in SYSTEMPATH/Debug/Toolbar.php on line 168.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-23 14:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:53:34 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 52432896 bytes)
+in SYSTEMPATH/Debug/Toolbar.php on line 168.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-23 14:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:55:17 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 60821504 bytes)
+in SYSTEMPATH/Debug/Toolbar.php on line 168.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-23 14:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:55:52 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 52432896 bytes)
+in SYSTEMPATH/Debug/Toolbar.php on line 168.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-23 14:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:56:55 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 60821504 bytes)
+in SYSTEMPATH/Debug/Toolbar.php on line 168.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-23 14:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:57:03 --> Call to a member function getId() on null
+in APPPATH/Controllers/FoodtruckController.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 14:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 14:58:20 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 44044288 bytes)
+in SYSTEMPATH/Debug/Toolbar.php on line 168.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-23 14:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 14:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 15:01:40 --> Call to a member function getId() on null
+in APPPATH/Controllers/FoodtruckController.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 15:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 15:02:36 --> Call to a member function getId() on null
+in APPPATH/Controllers/FoodtruckController.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 15:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 15:03:04 --> Call to a member function getId() on null
+in APPPATH/Controllers/FoodtruckController.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 15:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 15:03:11 --> Call to a member function getId() on null
+in APPPATH/Controllers/FoodtruckController.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 15:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 15:03:20 --> Call to a member function getId() on null
+in APPPATH/Controllers/FoodtruckController.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 15:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 15:04:45 --> Call to a member function getId() on null
+in APPPATH/Controllers/FoodtruckController.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->createFoodtruck()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 15:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 15:09:15 --> unlink(/app/writable/debugbar/debugbar_1703343131.229045.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 15:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 15:28:57 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 10061056 bytes)
+in SYSTEMPATH/HTTP/IncomingRequest.php on line 574.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-23 15:30:08 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 20275200 bytes)
+in SYSTEMPATH/HTTP/IncomingRequest.php on line 650.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-23 15:30:30 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 40701952 bytes)
+in SYSTEMPATH/HTTP/IncomingRequest.php on line 650.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-23 15:31:10 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 81622376 bytes)
+in APPPATH/Models/FoodtruckModel.php on line 393.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-23 15:31:50 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 81622376 bytes)
+in APPPATH/Models/FoodtruckModel.php on line 393.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-23 15:34:45 --> syntax error, unexpected variable "$totalBannerSize"
+in APPPATH/Models/FoodtruckModel.php on line 390.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 APPPATH/Controllers/FoodtruckController.php(215): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 APPPATH/Controllers/FoodtruckController.php(98): App\Controllers\FoodtruckController->loadFoodtruck()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->saveFoodtruck()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-23 15:34:57 --> syntax error, unexpected variable "$totalBannerSize"
+in APPPATH/Models/FoodtruckModel.php on line 390.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 APPPATH/Controllers/FoodtruckController.php(215): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 APPPATH/Controllers/FoodtruckController.php(33): App\Controllers\FoodtruckController->loadFoodtruck()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-23 15:35:01 --> syntax error, unexpected variable "$totalBannerSize"
+in APPPATH/Models/FoodtruckModel.php on line 390.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 APPPATH/Controllers/FoodtruckController.php(215): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 APPPATH/Controllers/FoodtruckController.php(33): App\Controllers\FoodtruckController->loadFoodtruck()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 15:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 15:36:06 --> syntax error, unexpected variable "$totalBannerSize"
+in APPPATH/Models/FoodtruckModel.php on line 390.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 APPPATH/Controllers/FoodtruckController.php(215): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 APPPATH/Controllers/FoodtruckController.php(33): App\Controllers\FoodtruckController->loadFoodtruck()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-23 15:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-23 15:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-23 15:38:53 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 56627200 bytes)
+in SYSTEMPATH/Debug/Toolbar.php on line 168.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-23 15:39:18 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 81622376 bytes)
+in APPPATH/Models/FoodtruckModel.php on line 398.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

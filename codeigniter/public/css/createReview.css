@@ -1,0 +1,54 @@
+/* CREATE REVIEW */
+
+.create-review {
+    /* Box */
+    width: 100%;
+    height: fit-content;
+
+    /* Alignment */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.create-review-food-item-selection {
+    /* Box */
+    width: 100%;
+    height: fit-content;
+}
+
+.create-review-food-item {
+    /* Box */
+    width: 30%;
+    min-width: 20rem;
+    height: 2.5em;
+    display: block;
+}
+
+.create-review-content {
+    /* Box */
+    width: 100%;
+    height: 10rem;
+}
+
+.create-review-rating {
+    /* Box */
+    width: 30%;
+    min-width: 10rem;
+}
+
+.create-review-title {
+    /* Box */
+    flex-grow: 2;
+    height: fit-content;
+}
+
+/* PAGE STYLING */
+
+#errorBox {
+    /* Box */
+    margin-top: 1rem;
+}

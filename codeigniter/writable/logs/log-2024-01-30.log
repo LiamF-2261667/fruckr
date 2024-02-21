@@ -1,0 +1,631 @@
+CRITICAL - 2024-01-30 14:52:24 --> The route for "foodtruck/4" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 62.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 APPPATH/Controllers/BaseController.php(149): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 APPPATH/Controllers/StaffController.php(130): App\Controllers\BaseController->redirect()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 14:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 14:52:50 --> Sending email to liam16juni2004@gmail.com with subject You have been invited to work at Greek Fortune! and message 
+            <h2>You have been invited to work at Greek Fortune!</h2>
+            <a style="color: IndianRed" href="http://localhost:8080//foodtruck/4/accept">Click here to accept the invitation.</a><br />
+            <a style="color: IndianRed" href="http://localhost:8080//foodtruck/4/decline">Or here to decline.</a>
+        
+INFO - 2024-01-30 14:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-30 14:53:01 --> mysqli_sql_exception: Duplicate entry '26-4' for key 'worksat.PRIMARY' in /app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/FoodtruckWorkerModel.php(119): App\Database\DatabaseHandler->query()
+#5 /app/app/Models/WorkInvitationModel.php(109): App\Models\FoodtruckWorkerModel->addFoodtruck()
+#6 /app/app/Controllers/StaffController.php(123): App\Models\WorkInvitationModel->accept()
+#7 /app/system/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+#8 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-30 14:53:01 --> Duplicate entry '26-4' for key 'worksat.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/FoodtruckWorkerModel.php(119): App\Database\DatabaseHandler->query()
+ 3 APPPATH/Models/WorkInvitationModel.php(109): App\Models\FoodtruckWorkerModel->addFoodtruck()
+ 4 APPPATH/Controllers/StaffController.php(123): App\Models\WorkInvitationModel->accept()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 14:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-30 14:53:31 --> mysqli_sql_exception: Duplicate entry '26-4' for key 'worksat.PRIMARY' in /app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/FoodtruckWorkerModel.php(119): App\Database\DatabaseHandler->query()
+#5 /app/app/Models/WorkInvitationModel.php(109): App\Models\FoodtruckWorkerModel->addFoodtruck()
+#6 /app/app/Controllers/StaffController.php(123): App\Models\WorkInvitationModel->accept()
+#7 /app/system/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+#8 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-30 14:53:31 --> Duplicate entry '26-4' for key 'worksat.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/FoodtruckWorkerModel.php(119): App\Database\DatabaseHandler->query()
+ 3 APPPATH/Models/WorkInvitationModel.php(109): App\Models\FoodtruckWorkerModel->addFoodtruck()
+ 4 APPPATH/Controllers/StaffController.php(123): App\Models\WorkInvitationModel->accept()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 14:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-30 14:53:34 --> mysqli_sql_exception: Duplicate entry '26-4' for key 'worksat.PRIMARY' in /app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/FoodtruckWorkerModel.php(119): App\Database\DatabaseHandler->query()
+#5 /app/app/Models/WorkInvitationModel.php(109): App\Models\FoodtruckWorkerModel->addFoodtruck()
+#6 /app/app/Controllers/StaffController.php(123): App\Models\WorkInvitationModel->accept()
+#7 /app/system/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+#8 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-30 14:53:34 --> Duplicate entry '26-4' for key 'worksat.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/FoodtruckWorkerModel.php(119): App\Database\DatabaseHandler->query()
+ 3 APPPATH/Models/WorkInvitationModel.php(109): App\Models\FoodtruckWorkerModel->addFoodtruck()
+ 4 APPPATH/Controllers/StaffController.php(123): App\Models\WorkInvitationModel->accept()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 14:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-30 14:53:48 --> unlink(/app/writable/debugbar/debugbar_1706197451.851061.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 14:53:51 --> unlink(/app/writable/debugbar/debugbar_1706197457.269826.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 14:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-30 14:54:41 --> unlink(/app/writable/debugbar/debugbar_1706197604.465179.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 14:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-30 14:54:55 --> mysqli_sql_exception: Duplicate entry '26-4' for key 'worksat.PRIMARY' in /app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/FoodtruckWorkerModel.php(119): App\Database\DatabaseHandler->query()
+#5 /app/app/Models/WorkInvitationModel.php(109): App\Models\FoodtruckWorkerModel->addFoodtruck()
+#6 /app/app/Controllers/StaffController.php(123): App\Models\WorkInvitationModel->accept()
+#7 /app/system/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+#8 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-30 14:54:55 --> Duplicate entry '26-4' for key 'worksat.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/FoodtruckWorkerModel.php(119): App\Database\DatabaseHandler->query()
+ 3 APPPATH/Models/WorkInvitationModel.php(109): App\Models\FoodtruckWorkerModel->addFoodtruck()
+ 4 APPPATH/Controllers/StaffController.php(123): App\Models\WorkInvitationModel->accept()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 14:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-30 14:56:04 --> unlink(/app/writable/debugbar/debugbar_1706626360.792245.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 14:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 14:56:09 --> Sending email to info@greekfortune.be with subject A new worker has joined Greek Fortune! and message 
+            <h2>Frans Fransen joined the foodtruck!</h2>
+            <p>He will from now be able to see and handle the incoming orders for Greek Fortune.</p>
+        
+CRITICAL - 2024-01-30 14:56:10 --> The route for "foodtruck/4" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 62.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 APPPATH/Controllers/BaseController.php(149): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 APPPATH/Controllers/StaffController.php(130): App\Controllers\BaseController->redirect()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 14:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 14:57:04 --> Sending email to liam16juni2004@gmail.com with subject You have been invited to work at Greek Fortune! and message 
+            <h2>You have been invited to work at Greek Fortune!</h2>
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/accept">Click here to accept the invitation.</a><br />
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/decline">Or here to decline.</a>
+        
+INFO - 2024-01-30 14:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-30 14:57:11 --> mysqli_sql_exception: Duplicate entry '26-4' for key 'worksat.PRIMARY' in /app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/FoodtruckWorkerModel.php(119): App\Database\DatabaseHandler->query()
+#5 /app/app/Models/WorkInvitationModel.php(109): App\Models\FoodtruckWorkerModel->addFoodtruck()
+#6 /app/app/Controllers/StaffController.php(123): App\Models\WorkInvitationModel->accept()
+#7 /app/system/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+#8 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-30 14:57:11 --> Duplicate entry '26-4' for key 'worksat.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/FoodtruckWorkerModel.php(119): App\Database\DatabaseHandler->query()
+ 3 APPPATH/Models/WorkInvitationModel.php(109): App\Models\FoodtruckWorkerModel->addFoodtruck()
+ 4 APPPATH/Controllers/StaffController.php(123): App\Models\WorkInvitationModel->accept()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 14:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 14:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:02:46 --> Sending email to info@greekfortune.be with subject A new worker has joined Greek Fortune! and message 
+            <h2>Frans Fransen joined the foodtruck!</h2>
+            <p>He will from now be able to see and handle the incoming orders for Greek Fortune.</p>
+        
+CRITICAL - 2024-01-30 15:02:47 --> The route for "foodtruck/4" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 62.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 APPPATH/Controllers/BaseController.php(149): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 APPPATH/Controllers/StaffController.php(134): App\Controllers\BaseController->redirect()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 15:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-30 15:04:12 --> unlink(/app/writable/debugbar/debugbar_1706626549.053628.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 15:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:04:27 --> Sending email to liam16juni2004@gmail.com with subject You have been invited to work at Greek Fortune! and message 
+            <h2>You have been invited to work at Greek Fortune!</h2>
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/accept">Click here to accept the invitation.</a><br />
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/decline">Or here to decline.</a>
+        
+INFO - 2024-01-30 15:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:04:42 --> Sending email to info@greekfortune.be with subject A new worker has joined Greek Fortune! and message 
+            <h2>Frans Fransen joined the foodtruck!</h2>
+            <p>He will from now be able to see and handle the incoming orders for Greek Fortune.</p>
+        
+CRITICAL - 2024-01-30 15:04:42 --> The route for "oodtruck/4" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 62.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 APPPATH/Controllers/BaseController.php(149): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 APPPATH/Controllers/StaffController.php(134): App\Controllers\BaseController->redirect()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 15:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-30 15:05:56 --> unlink(/app/writable/debugbar/debugbar_1706626650.995409.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 15:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:06:11 --> Sending email to liam16juni2004@gmail.com with subject You have been invited to work at Greek Fortune! and message 
+            <h2>You have been invited to work at Greek Fortune!</h2>
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/accept">Click here to accept the invitation.</a><br />
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/decline">Or here to decline.</a>
+        
+INFO - 2024-01-30 15:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:07:19 --> Sending email to info@greekfortune.be with subject A new worker has joined Greek Fortune! and message 
+            <h2>Frans Fransen joined the foodtruck!</h2>
+            <p>He will from now be able to see and handle the incoming orders for Greek Fortune.</p>
+        
+CRITICAL - 2024-01-30 15:07:20 --> The route for "foodtruck/4" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 62.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 APPPATH/Controllers/BaseController.php(149): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 APPPATH/Controllers/StaffController.php(134): App\Controllers\BaseController->redirect()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->accept()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 15:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-30 15:07:59 --> unlink(/app/writable/debugbar/debugbar_1706627044.174977.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 15:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-30 15:08:30 --> unlink(/app/writable/debugbar/debugbar_1706627110.763454.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 15:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:08:32 --> Sending email to liam16juni2004@gmail.com with subject You have been invited to work at Greek Fortune! and message 
+            <h2>You have been invited to work at Greek Fortune!</h2>
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/accept">Click here to accept the invitation.</a><br />
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/decline">Or here to decline.</a>
+        
+INFO - 2024-01-30 15:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-30 15:09:21 --> unlink(/app/writable/debugbar/debugbar_1706627173.238489.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 15:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:09:31 --> Sending email to info@greekfortune.be with subject A new worker has joined Greek Fortune! and message 
+            <h2>Frans Fransen joined the foodtruck!</h2>
+            <p>He will from now be able to see and handle the incoming orders for Greek Fortune.</p>
+        
+INFO - 2024-01-30 15:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:10:23 --> Sending email to liam16juni2004@gmail.com with subject You have been invited to work at Greek Fortune! and message 
+            <h2>You have been invited to work at Greek Fortune!</h2>
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/accept">Click here to accept the invitation.</a><br />
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/decline">Or here to decline.</a>
+        
+INFO - 2024-01-30 15:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:11:16 --> Sending email to liam16juni2004@gmail.com with subject You have been invited to work at Greek Fortune! and message 
+            <h2>You have been invited to work at Greek Fortune!</h2>
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/accept">Click here to accept the invitation.</a><br />
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/decline">Or here to decline.</a>
+        
+INFO - 2024-01-30 15:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:12:54 --> Sending email to liam16juni2004@gmail.com with subject You have been invited to work at Greek Fortune! and message 
+            <h2>You have been invited to work at Greek Fortune!</h2>
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/accept">Click here to accept the invitation.</a><br />
+            <br />
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/decline">Or here to decline.</a>
+        
+INFO - 2024-01-30 15:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:13:03 --> Sending email to info@greekfortune.be with subject A new worker has joined Greek Fortune! and message 
+            <h2>Frans Fransen joined the foodtruck!</h2>
+            <p>He will from now be able to see and handle the incoming orders for Greek Fortune.</p>
+        
+INFO - 2024-01-30 15:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:39:49 --> Sending email to liam16juni2004@gmail.com with subject You have been invited to work at Greek Fortune! and message 
+            <h2>You have been invited to work at Greek Fortune!</h2>
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/accept">Click here to accept the invitation.</a><br />
+            <br />
+            <a style="color: IndianRed" href="http://localhost:8080/foodtruck/4/decline">Or here to decline.</a>
+        
+INFO - 2024-01-30 15:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-30 15:40:04 --> Sending email to info@greekfortune.be with subject A new worker has joined Greek Fortune! and message 
+            <h2>Frans Fransen joined the foodtruck!</h2>
+            <p>He will from now be able to see and handle the incoming orders for Greek Fortune.</p>
+        
+INFO - 2024-01-30 15:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-30 15:40:48 --> unlink(/app/writable/debugbar/debugbar_1706629134.335840.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 15:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 15:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-30 17:14:26 --> session_start(): Failed to decode session object. Session has been destroyed
+in SYSTEMPATH/Session/Session.php on line 919.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Session/Session.php(919): session_start()
+ 3 SYSTEMPATH/Session/Session.php(241): CodeIgniter\Session\Session->startSession()
+ 4 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 5 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 6 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 7 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+ 8 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 9 APPPATH/Controllers/BaseController.php(61): CodeIgniter\Config\BaseService::__callStatic()
+10 SYSTEMPATH/CodeIgniter.php(915): App\Controllers\BaseController->initController()
+11 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 17:43:38 --> mysqli_sql_exception: Duplicate entry '8-liam16juni2004@gmail.com' for key 'openworkinvitation.PRIMARY' in /app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/WorkInvitationModel.php(48): App\Database\DatabaseHandler->query()
+#5 /app/app/Controllers/StaffController.php(98): App\Models\WorkInvitationModel::createNewWorkInvitation()
+#6 /app/system/CodeIgniter.php(942): App\Controllers\StaffController->addWorker()
+#7 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-30 17:43:38 --> Cannot connect to the database. Please try again later.
+in APPPATH/Database/DatabaseHandler.php on line 82.
+ 1 APPPATH/Models/WorkInvitationModel.php(48): App\Database\DatabaseHandler->query()
+ 2 APPPATH/Controllers/StaffController.php(98): App\Models\WorkInvitationModel::createNewWorkInvitation()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->addWorker()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 17:46:12 --> mysqli_sql_exception: Duplicate entry '8-liam16juni2004@gmail.com' for key 'openworkinvitation.PRIMARY' in /app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/WorkInvitationModel.php(65): App\Database\DatabaseHandler->query()
+#5 /app/app/Controllers/StaffController.php(98): App\Models\WorkInvitationModel::createNewWorkInvitation()
+#6 /app/system/CodeIgniter.php(942): App\Controllers\StaffController->addWorker()
+#7 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-30 17:46:12 --> Cannot connect to the database. Please try again later.
+in APPPATH/Database/DatabaseHandler.php on line 82.
+ 1 APPPATH/Models/WorkInvitationModel.php(65): App\Database\DatabaseHandler->query()
+ 2 APPPATH/Controllers/StaffController.php(98): App\Models\WorkInvitationModel::createNewWorkInvitation()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->addWorker()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 17:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-30 17:47:28 --> mysqli_sql_exception: Duplicate entry '8-liam16juni2004@gmail.com' for key 'openworkinvitation.PRIMARY' in /app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/WorkInvitationModel.php(65): App\Database\DatabaseHandler->query()
+#5 /app/app/Controllers/StaffController.php(98): App\Models\WorkInvitationModel::createNewWorkInvitation()
+#6 /app/system/CodeIgniter.php(942): App\Controllers\StaffController->addWorker()
+#7 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-30 17:47:28 --> Duplicate entry '8-liam16juni2004@gmail.com' for key 'openworkinvitation.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/WorkInvitationModel.php(65): App\Database\DatabaseHandler->query()
+ 3 APPPATH/Controllers/StaffController.php(98): App\Models\WorkInvitationModel::createNewWorkInvitation()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->addWorker()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 17:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 17:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-30 17:47:55 --> mysqli_sql_exception: Duplicate entry '8-liam16juni2004@gmail.com' for key 'openworkinvitation.PRIMARY' in /app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/WorkInvitationModel.php(65): App\Database\DatabaseHandler->query()
+#5 /app/app/Controllers/StaffController.php(98): App\Models\WorkInvitationModel::createNewWorkInvitation()
+#6 /app/system/CodeIgniter.php(942): App\Controllers\StaffController->addWorker()
+#7 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-30 17:47:55 --> Duplicate entry '8-liam16juni2004@gmail.com' for key 'openworkinvitation.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/WorkInvitationModel.php(65): App\Database\DatabaseHandler->query()
+ 3 APPPATH/Controllers/StaffController.php(98): App\Models\WorkInvitationModel::createNewWorkInvitation()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\StaffController->addWorker()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 17:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 17:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 17:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

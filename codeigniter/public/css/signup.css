@@ -1,0 +1,87 @@
+.section {
+    /* Box */
+    margin-bottom: 1.5em;
+}
+
+button {
+    /* Alignment */
+    display: block;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+#signupForm {
+    /* Box */
+    margin-bottom: 3em;
+}
+
+#typeSection {
+    /* Box */
+    margin-top: 2em;
+
+    /* Alignment */
+    text-align: center;
+}
+
+.typeSectionRadio {
+    /* Box */
+    display: inline-block;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+h2 {
+    /* Box */
+    margin-top: 2em;
+
+    /* Alignment */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#AlreadyAccountLink {
+    /* Box */
+    margin-top: 2em;
+
+    /* Aligment */
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    label {
+        /* Box */
+        display: block;
+        width: 80vw;
+        text-align: left;
+        margin-left: 10vw;
+        margin-right: auto;
+    }
+
+    input {
+        /* Box */
+        display: block;
+        min-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type="radio"] {
+        /* Box */
+        display: inline-block;
+        min-width: 1em;
+        max-width: 1em;
+    }
+
+    .typeRadioLabel {
+        /* Box */
+        display: inline-block;
+        width: auto;
+        text-align: left;
+        margin-left: 1em;
+        margin-right: auto;
+    }
+}

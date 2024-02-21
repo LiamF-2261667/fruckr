@@ -1,0 +1,288 @@
+ERROR - 2024-01-25 15:19:24 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp-relay.gmail.com:25 (Connection timed out) in /app/system/Email/Email.php:1891
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Email/Email.php(1891): fsockopen()
+#2 /app/system/Email/Email.php(1799): CodeIgniter\Email\Email->SMTPConnect()
+#3 /app/system/Email/Email.php(1684): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /app/system/Email/Email.php(1578): CodeIgniter\Email\Email->spoolEmail()
+#5 /app/app/Helpers/EmailSender.php(21): CodeIgniter\Email\Email->send()
+#6 /app/app/Models/OrderModel.php(318): App\Helpers\EmailSender::sendMail()
+#7 /app/app/Controllers/FoodtruckOrdersController.php(80): App\Models\OrderModel->setReady()
+#8 /app/system/CodeIgniter.php(942): App\Controllers\FoodtruckOrdersController->setReady()
+#9 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-01-25 15:19:24 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-01-25 15:19:24 --> 
+ERROR - 2024-01-25 15:22:24 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-01-25 15:22:24 --> 220 smtp-relay.gmail.com ESMTP bk13-20020a0560001d8d00b0033934fd35b4sm596672wrb.19 - gsmtp
+
+hello: 250-smtp-relay.gmail.com at your service, [84.193.186.88]
+250-SIZE 157286400
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 550-5.7.0 Mail relay denied [84.193.186.88]. Invalid credentials for relay for
+550-5.7.0 one of the domains in:  (as obtained from HELO and MAIL FROM).
+550-5.7.0  Email is being sent from a domain or IP address which isn't
+550-5.7.0 registered in your Workspace account. Please login to your Workspace
+550-5.7.0 account and verify that your sending device IP address has been
+550-5.7.0 registered within the Workspace SMTP Relay Settings. For more
+550-5.7.0 information, go to
+550 5.7.0  https://support.google.com/a/answer/6140680#maildenied bk13-20020a0560001d8d00b0033934fd35b4sm596672wrb.19 - gsmtp
+
+The following SMTP error was encountered: 550-5.7.0 Mail relay denied [84.193.186.88]. Invalid credentials for relay for
+550-5.7.0 one of the domains in:  (as obtained from HELO and MAIL FROM).
+550-5.7.0  Email is being sent from a domain or IP address which isn't
+550-5.7.0 registered in your Workspace account. Please login to your Workspace
+550-5.7.0 account and verify that your sending device IP address has been
+550-5.7.0 registered within the Workspace SMTP Relay Settings. For more
+550-5.7.0 information, go to
+550 5.7.0  https://support.google.com/a/answer/6140680#maildenied bk13-20020a0560001d8d00b0033934fd35b4sm596672wrb.19 - gsmtp
+
+quit: 
+The following SMTP error was encountered: 
+ERROR - 2024-01-25 15:22:24 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /app/system/Email/Email.php:2065
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Email/Email.php(2065): fwrite()
+#2 /app/system/Email/Email.php(1974): CodeIgniter\Email\Email->sendData()
+#3 /app/system/Email/Email.php(2209): CodeIgniter\Email\Email->sendCommand()
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
+ERROR - 2024-01-25 15:22:48 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-01-25 15:22:48 --> 220 smtp-relay.gmail.com ESMTP v18-20020a05600c215200b0040ecd0ef751sm81045wml.30 - gsmtp
+
+hello: 250-smtp-relay.gmail.com at your service, [84.193.186.88]
+250-SIZE 157286400
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 550-5.7.0 Mail relay denied [84.193.186.88]. Invalid credentials for relay for
+550-5.7.0 one of the domains in:  (as obtained from HELO and MAIL FROM).
+550-5.7.0  Email is being sent from a domain or IP address which isn't
+550-5.7.0 registered in your Workspace account. Please login to your Workspace
+550-5.7.0 account and verify that your sending device IP address has been
+550-5.7.0 registered within the Workspace SMTP Relay Settings. For more
+550-5.7.0 information, go to
+550 5.7.0  https://support.google.com/a/answer/6140680#maildenied v18-20020a05600c215200b0040ecd0ef751sm81045wml.30 - gsmtp
+
+The following SMTP error was encountered: 550-5.7.0 Mail relay denied [84.193.186.88]. Invalid credentials for relay for
+550-5.7.0 one of the domains in:  (as obtained from HELO and MAIL FROM).
+550-5.7.0  Email is being sent from a domain or IP address which isn't
+550-5.7.0 registered in your Workspace account. Please login to your Workspace
+550-5.7.0 account and verify that your sending device IP address has been
+550-5.7.0 registered within the Workspace SMTP Relay Settings. For more
+550-5.7.0 information, go to
+550 5.7.0  https://support.google.com/a/answer/6140680#maildenied v18-20020a05600c215200b0040ecd0ef751sm81045wml.30 - gsmtp
+
+quit: 
+The following SMTP error was encountered: 
+ERROR - 2024-01-25 15:22:48 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /app/system/Email/Email.php:2065
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Email/Email.php(2065): fwrite()
+#2 /app/system/Email/Email.php(1974): CodeIgniter\Email\Email->sendData()
+#3 /app/system/Email/Email.php(2209): CodeIgniter\Email\Email->sendCommand()
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
+CRITICAL - 2024-01-25 15:42:30 --> Class "EmailFactory" not found
+in APPPATH/Models/OrderModel.php on line 319.
+ 1 APPPATH/Controllers/FoodtruckOrdersController.php(80): App\Models\OrderModel->setReady()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckOrdersController->setReady()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-25 15:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-25 15:42:47 --> Class "EmailFactory" not found
+in APPPATH/Models/OrderModel.php on line 319.
+ 1 APPPATH/Controllers/FoodtruckOrdersController.php(80): App\Models\OrderModel->setReady()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckOrdersController->setReady()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-25 15:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-25 15:44:06 --> unlink(/app/writable/debugbar/debugbar_1706125565.055179.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 15:44:08 --> unlink(/app/writable/debugbar/debugbar_1706125586.690871.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-25 15:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-25 15:44:20 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 14811040 bytes)
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 88.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-25 15:44:20 --> Class "EmailFactory" not found
+in APPPATH/Models/OrderModel.php on line 319.
+ 1 APPPATH/Controllers/FoodtruckOrdersController.php(80): App\Models\OrderModel->setReady()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckOrdersController->setReady()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-25 15:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-25 15:46:31 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 14811040 bytes)
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 88.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-25 15:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-25 15:46:39 --> unlink(/app/writable/debugbar/debugbar_1706125619.675585.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 15:46:41 --> unlink(/app/writable/debugbar/debugbar_1706125659.122000.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-25 15:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-25 15:47:02 --> Cannot assign null to property App\Models\FoodtruckModel::$orders of type array
+in SYSTEMPATH/Session/Session.php on line 919.
+ 1 SYSTEMPATH/Session/Session.php(919): session_start()
+ 2 SYSTEMPATH/Session/Session.php(241): CodeIgniter\Session\Session->startSession()
+ 3 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 4 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 APPPATH/Controllers/BaseController.php(61): CodeIgniter\Config\BaseService::__callStatic()
+ 9 SYSTEMPATH/CodeIgniter.php(915): App\Controllers\BaseController->initController()
+10 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 15:47:10 --> Cannot assign null to property App\Models\FoodtruckModel::$orders of type array
+in SYSTEMPATH/Session/Session.php on line 919.
+ 1 SYSTEMPATH/Session/Session.php(919): session_start()
+ 2 SYSTEMPATH/Session/Session.php(241): CodeIgniter\Session\Session->startSession()
+ 3 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 4 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 APPPATH/Controllers/BaseController.php(61): CodeIgniter\Config\BaseService::__callStatic()
+ 9 SYSTEMPATH/CodeIgniter.php(915): App\Controllers\BaseController->initController()
+10 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 15:47:17 --> Cannot assign null to property App\Models\FoodtruckModel::$orders of type array
+in SYSTEMPATH/Session/Session.php on line 919.
+ 1 SYSTEMPATH/Session/Session.php(919): session_start()
+ 2 SYSTEMPATH/Session/Session.php(241): CodeIgniter\Session\Session->startSession()
+ 3 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 4 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 APPPATH/Controllers/BaseController.php(61): CodeIgniter\Config\BaseService::__callStatic()
+ 9 SYSTEMPATH/CodeIgniter.php(915): App\Controllers\BaseController->initController()
+10 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 15:47:30 --> Cannot assign null to property App\Models\FoodtruckModel::$orders of type array
+in SYSTEMPATH/Session/Session.php on line 919.
+ 1 SYSTEMPATH/Session/Session.php(919): session_start()
+ 2 SYSTEMPATH/Session/Session.php(241): CodeIgniter\Session\Session->startSession()
+ 3 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 4 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 APPPATH/Controllers/BaseController.php(61): CodeIgniter\Config\BaseService::__callStatic()
+ 9 SYSTEMPATH/CodeIgniter.php(915): App\Controllers\BaseController->initController()
+10 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-25 15:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-25 15:47:48 --> unlink(/app/writable/debugbar/debugbar_1706125791.174506.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-25 15:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-25 15:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-25 15:47:52 --> unlink(/app/writable/debugbar/debugbar_1706197374.738368.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 15:47:56 --> unlink(/app/writable/debugbar/debugbar_1706197422.446064.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

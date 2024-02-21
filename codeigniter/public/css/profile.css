@@ -1,0 +1,47 @@
+.section {
+    /* Box */
+    margin-bottom: 1.5em;
+}
+
+button {
+    /* Alignment */
+    display: block;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+#saveForm {
+    /* Box */
+    margin-bottom: 3em;
+}
+
+h2 {
+    /* Box */
+    margin-top: 2em;
+
+    /* Alignment */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    label {
+        /* Box */
+        display: block;
+        width: 80vw;
+        text-align: left;
+        margin-left: 10vw;
+        margin-right: auto;
+    }
+
+    input {
+        /* Box */
+        display: block;
+        min-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

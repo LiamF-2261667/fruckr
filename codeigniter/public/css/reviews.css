@@ -1,0 +1,115 @@
+
+#foodtruckReviews {
+    /* Box */
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 800px) {
+    #foodtruckReviews {
+        /* Box */
+        margin: 1rem;
+    }
+}
+
+/* REVIEW LIST */
+
+.review-list {
+    /* Box */
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+/* REVIEW LIST ITEM */
+
+.review-item {
+    /* Box */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+    height: fit-content;
+
+    /* Border */
+    border-radius: 2rem;
+    border: 0.2rem solid var(--majorTitleColor);
+
+    /* Background */
+    background-color: var(--lightBackgroundColor);
+
+    /* Behaviour */
+    overflow: hidden;
+}
+
+/* REVIEW OBJECT */
+
+.review-object {
+    /* Box */
+    width: 100%;
+    height: fit-content;
+
+    /* Alignment */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* Text */
+    font-size: 1.5rem;
+}
+
+/* GENERAL INFO */
+
+.review-object .general-info * {
+    /* Box */
+    margin: 0;
+}
+
+.review-object .general-info {
+    /* Box */
+    width: 100%;
+    height: fit-content;
+}
+
+.review-object .general-info .user, .review-object .general-info .rating {
+    /* Box */
+    margin-right: 1rem;
+
+    /* Position */
+    float: left;
+}
+
+.review-object .general-info .date {
+    /* Position */
+    float: right;
+}
+
+@media (max-width: 800px) {
+    .review-object .general-info > * {
+        /* Box */
+        margin-right: 0;
+        width: 100%;
+
+        /* Position */
+        float: unset;
+    }
+}
+
+/* MESSAGE */
+
+.review-object .message {
+    /* Box */
+    width: 100%;
+    height: fit-content;
+}
+
+.review-object .message .title {
+    /* Box */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+
+    /* Text */
+    text-align: left;
+}

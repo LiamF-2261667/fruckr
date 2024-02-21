@@ -1,0 +1,229 @@
+/* PAGE STYLING */
+@media (max-width: 800px) {
+    main {
+        /* Box */
+        width: 100vw;
+    }
+}
+
+/* EDITING & READONLY */
+.readonly {
+    display: block;
+}
+
+.editonly {
+    display: none;
+}
+
+.readonly-flex, .toolbar > .readonly-flex {
+    display: flex;
+}
+
+.editonly-flex, .toolbar > .editonly-flex {
+    display: none;
+}
+
+/* EDITING STYLING */
+.hero-section > input {
+    /* Box */
+    width: 100%;
+    padding: 0.2em;
+
+    /* Text */
+    font-size: 0.5em;
+}
+
+@media (max-width: 800px) {
+    .hero-section > input {
+        /* Text */
+        font-size: 0.4em;
+    }
+}
+
+.row > img, .row > video {
+    /* Box */
+    aspect-ratio: 3 / 1;
+
+    /* Behaviour */
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    .row > img, .row > video {
+        /* Box */
+        aspect-ratio: 1.5 / 1;
+    }
+}
+
+@media (max-width: 575px) {
+    fieldset > .row, fieldset > div > .row {
+        /* Box */
+        margin: 0.5em !important;
+
+        /* Positions */
+        flex-direction: column !important;
+        gap: 0.5em !important;
+    }
+
+    fieldset > .row > label, fieldset > div > .row > label {
+        /* Alignment */
+        text-align: center !important;
+    }
+}
+
+textarea {
+    /* Box */
+    height: 10em;
+    width: 100%;
+
+    /* Text */
+    text-align: left;
+}
+
+table.editonly {
+    /* Box */
+    padding: 0.5em;
+    margin-top: 1em;
+
+    /* Border */
+    border-style: outset;
+    border-color: black;
+    border-radius: 1rem;
+    border-width: 0.2rem;
+}
+
+table.editonly > tbody > tr > td > button {
+    /* Box */
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+td > input, td > select {
+    /* Box */
+    width: 100%;
+}
+
+td > p {
+    /* Box */
+    margin: 0;
+}
+
+.section > label, .section > input {
+    /* Box */
+    display: block;
+    width: 100%;
+    min-width: 12rem;
+
+    /* Text */
+    text-align: left;
+}
+
+ul.editonly {
+    /* Box */
+    padding: 0.5em;
+
+    /* Border */
+    border-style: outset;
+    border-color: black;
+    border-radius: 1rem;
+    border-width: 0.2rem;
+}
+
+.information .editonly li > input {
+    /* Box */
+    width: 100%;
+}
+
+#daySelect {
+    /* Box */
+    width: fit-content;
+}
+
+#saveLoadingIcon {
+    /* Image */
+    filter: grayscale(1) brightness(1.2);
+}
+
+#generalErrorBox {
+    /* Box */
+    margin: 1em;
+}
+
+/* Food edit styling */
+
+.ingredients td button {
+    /* Box */
+    margin: 0.5em;
+}
+
+button.extraInfo {
+    /* Box */
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.5em;
+}
+
+#foodItemSaveError {
+    /* Box */
+    margin-top: 1em;
+}
+
+#add-food-item {
+    /* Box */
+    height: fit-content;
+    margin-bottom: 1em;
+
+    /* Border */
+    border-radius: 2em;
+    border: 0.2rem solid var(--minorTitleColor);
+}
+
+#add-food-item .food-item {
+    /* Box */
+    margin: 0;
+
+    /* Border */
+    border: 0.4rem solid var(--defaultBackgroundColor);
+}
+
+#add-food-item:hover {
+    /* Background */
+    background-color: var(--lightBackgroundColor);
+
+    /* Border */
+    border-color: var(--defaultBackgroundColor);
+}
+
+#add-food-item:hover .food-item {
+    /* Border */
+    border-color: var(--minorTitleColor);
+}
+
+#extraInfoModalDeleteButton {
+    /* Background */
+    background-color: var(--dangerBackground);
+}
+
+#delete-section .row {
+    /* Box */
+    padding: 1em;
+}
+
+@media (max-width: 800px) {
+    #extraInfoModal input, #extraInfoModal button[type="submit"] {
+        /* Box */
+        width: 100%;
+    }
+
+    #extraInfoModal input.price {
+        /* Box */
+        width: 10em;
+    }
+}
+
+.reviews-title {
+    /* Box */
+    margin-top: 1em;
+}

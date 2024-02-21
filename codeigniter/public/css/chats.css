@@ -1,0 +1,100 @@
+/* ChatList */
+
+#chatList {
+    /* Box */
+    padding: 2rem;
+    min-height: 60vh;
+
+    /* Background */
+    background-color: var(--lightBackgroundColor);
+
+    /* Border */
+    border-radius: 1rem;
+    border-bottom: 0.2rem solid var(--majorTitleColor);
+}
+
+.chatItem {
+    /* Box */
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 1rem;
+
+    /* Position */
+    position: relative;
+
+    /* Border */
+    border-radius: 1rem;
+
+    /* Background */
+    background-color: var(--defaultBackgroundColor);
+
+    /* Transition */
+    transition: var(--responsiveTransition);
+}
+
+.chatItem:hover {
+    /* Background */
+    background-color: var(--lightTintedBackgroundColor);
+}
+
+.chatItem:hover p {
+    /* Text */
+    text-decoration: underline;
+}
+
+.chat-object {
+    /* Box */
+    width: 100%;
+    padding: 1rem;
+
+    /* Border */
+    border-radius: 1rem;
+    border: 0.2rem solid var(--majorTitleColor);
+
+    /* Alignment */
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Text */
+    text-decoration: unset;
+}
+
+.chat-object * {
+    /* Box */
+    min-width: fit-content;
+    margin: 0;
+
+    /* Alignment */
+    vertical-align: middle;
+}
+
+.chat-object .latest-message {
+    /* Box */
+    width: 100%;
+    min-width: unset;
+
+    /* Text */
+    text-align: center;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 800px) {
+    .chat-object {
+        /* Alignment */
+        flex-wrap: wrap;
+    }
+
+    .chat-object > * {
+        /* Box */
+        width: 100%;
+    }
+
+    .chat-object * {
+        /* Alignment */
+        text-align: center;
+    }
+}

@@ -1,0 +1,17 @@
+ERROR - 2024-01-26 14:22:21 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /app/system/Email/Email.php:1891
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /app/system/Email/Email.php(1891): fsockopen()
+#2 /app/system/Email/Email.php(1799): CodeIgniter\Email\Email->SMTPConnect()
+#3 /app/system/Email/Email.php(1684): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /app/system/Email/Email.php(1578): CodeIgniter\Email\Email->spoolEmail()
+#5 /app/app/Helpers/EmailSender.php(32): CodeIgniter\Email\Email->send()
+#6 /app/app/Models/OrderModel.php(323): App\Helpers\EmailSender::sendMail()
+#7 /app/app/Controllers/FoodtruckOrdersController.php(80): App\Models\OrderModel->setReady()
+#8 /app/system/CodeIgniter.php(942): App\Controllers\FoodtruckOrdersController->setReady()
+#9 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-01-26 14:22:21 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-01-26 14:22:21 --> 

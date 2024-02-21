@@ -1,0 +1,12 @@
+CRITICAL - 2023-12-14 18:45:40 --> Call to undefined method App\Models\FoodtruckModel::getAddresses()
+in APPPATH/Views/Foodtruck_Owner.php on line 270.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 SYSTEMPATH/Common.php(1204): view()
+ 5 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 6 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

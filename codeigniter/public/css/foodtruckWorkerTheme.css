@@ -1,0 +1,22 @@
+:root {
+    /* Colors */
+    --majorTitleColor: black;
+    --minorTitleColor: #5c80cd;
+
+    --defaultTextColor: DarkSlateGray;
+    --disabledTextColor: grey;
+
+    --lightTextColor: white;
+    --darkTextColor: black;
+
+    --darkTintedBackgroundColor: rgb(64, 81, 148);
+    --tintedBackgroundColor: #5c80cd;
+    --lightTintedBackgroundColor: #a2bbef;
+    --lightBackgroundColor: rgb(232, 232, 232);
+    --defaultBackgroundColor: white;
+    --errorBackgroundColor: rgb(241, 202, 202);
+    --lightErrorBackgroundColor: rgb(241, 160, 160);
+    --dangerBackground: #cb5656;
+
+    --shadowColor: lightgray;
+}

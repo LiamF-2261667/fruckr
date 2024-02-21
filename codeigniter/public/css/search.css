@@ -1,0 +1,136 @@
+/* PAGE STYLING */
+
+main {
+    /* Box */
+    margin-bottom: 3rem;
+
+    /* Alignment */
+    display: flex;
+    justify-content: start;
+
+    /* Border */
+    border-style: outset;
+    border-color: black;
+    border-radius: 1rem;
+    border-width: 0.2rem;
+}
+
+.filters {
+    /* Box */
+    padding: 1rem;
+    width: 30%;
+    margin: 0;
+
+    /* Border */
+    border-right: 0.2rem solid black;
+    border-radius: 1em;
+
+    /* Background */
+    background-color: var(--lightBackgroundColor);
+}
+
+.searchResults {
+    /* Box */
+    padding: 1rem;
+    width: 70%;
+    margin: 0;
+
+    /* Border */
+    border-radius: 1em;
+}
+
+#searchForm {
+    /* Box */
+    padding-bottom: 3rem;
+}
+
+.searchBar {
+    /* Box */
+    margin-bottom: 1rem;
+}
+
+#errorBox {
+    /* Box */
+    width: 75%;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    main {
+        /* Box */
+        flex-direction: column;
+
+        /* Border */
+        border: none;
+    }
+
+    .filters {
+        /* Box */
+        width: 100%;
+        border-right: none;
+        border-bottom: 0.2rem solid black;
+    }
+
+    .searchResults {
+        /* Box */
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+/* SEARCH RESULTS STYLING */
+
+.searchResults ul {
+    /* Box */
+    --foodtruckCarouselWidth: 100%;
+}
+
+.searchResults ul > li > p {
+    /* Text */
+    font-size: 1.7em;
+}
+
+@media (max-width: 800px) {
+    .searchResults {
+        /* Box */
+        margin-top: 1rem;
+    }
+}
+
+/* FILTERS STYLING */
+.filter-item {
+    /* Alignment */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    gap: 1em;
+}
+
+.filter-item > * {
+    /* Box */
+    margin: 0;
+    padding: 0;
+}
+
+.filter-wrapper button {
+    /* Box */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    /* Border */
+    border: none;
+
+    /* Background */
+    background-color: transparent;
+
+    /* Text */
+    text-align: left;
+    color: var(--minorTitleColor);
+}
+
+.filter-wrapper button:hover {
+    /* Text */
+    color: var(--darkTintedBackgroundColor);
+}

@@ -1,0 +1,72 @@
+body {
+    /* Background */
+    background-image: url("../Images/foodtruck.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contentSection {
+    /* Background */
+    background-color: white;
+
+    /* Box */
+    margin: auto;
+    width: 55%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+
+form {
+    /* Aligment */
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+
+    /* Box */
+    margin-bottom: 2rem;
+}
+
+figure.logo {
+    margin-top: 6rem;
+    padding-top: 0;
+}
+
+#emailSection {
+    /* Box */
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#passwordSection {
+    /* Box */
+    margin-bottom: 2rem;
+}
+
+#NoAccountLink {
+    /* Box */
+    margin-top: 2em;
+
+    /* Aligment */
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    #contentSection {
+        /* Box */
+        margin-top: 0;
+        margin-bottom: 2rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    form {
+        margin-bottom: 3rem;
+    }
+
+    body {
+        background-image: none;
+    }
+}

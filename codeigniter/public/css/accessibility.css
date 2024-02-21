@@ -1,0 +1,10 @@
+main li {
+    /* Box */
+    overflow-x: unset;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    /* Box */
+    margin-bottom: 3rem;
+}

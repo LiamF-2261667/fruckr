@@ -1,0 +1,89 @@
+.profile-image {
+    /* Box */
+    width: 7rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+
+    /* Position */
+    position: fixed;
+    z-index: 10;
+    top: 3.8rem;
+    margin-left: 1rem;
+
+    /* Shadow */
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5);
+
+    /* Background */
+    background-image: url("../Images/missingImage.png"); /* This will be covered by the image of the foodtruck */
+}
+
+.title {
+    /* Box */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* ORDERS */
+
+section {
+    /* Box */
+    margin-top: 1rem;
+}
+
+.orders {
+    /* Box */
+    padding: 0;
+}
+
+.order {
+    /* Box */
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    /* Position */
+    position: relative;
+
+    /* Border */
+    border-radius: 1rem;
+    border: 0.2rem solid var(--majorTitleColor);
+
+    /* Alignment */
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.order-object, .order-object-body {
+    /* Box */
+    flex-grow: 2;
+
+    /* Alignment */
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.order-object-body ul, .order-object-body li{
+    /* Text decoration */
+    list-style: circle !important;
+    color: var(--majorTitleColor);
+}
+
+.order-object-body * {
+    /* Box */
+    min-width: fit-content;
+}
+
+@media (max-width: 800px) {
+    .order-object-body > *, .order-object-body {
+        /* Box */
+        width: 100%;
+    }
+}

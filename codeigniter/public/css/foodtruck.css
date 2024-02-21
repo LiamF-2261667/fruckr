@@ -1,0 +1,401 @@
+.profile-image {
+    /* Box */
+    width: 7rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+
+    /* Position */
+    position: fixed;
+    z-index: 10;
+    top: 3.5rem;
+    margin-left: 1rem;
+
+    /* Shadow */
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5);
+
+    /* Background */
+    background-image: url("../Images/missingImage.png"); /* This will be covered by the image of the foodtruck */
+}
+
+#bannerCarousel {
+    /* Position */
+    display: block;
+    margin: auto;
+
+    /* Box */
+    aspect-ratio: 3 / 1;
+    object-position: center;
+
+    /* Behaviour */
+    overflow: hidden;
+}
+
+#bannerCarousel > .hero-section {
+    /* Text */
+    text-shadow: -4px 4px 10px black;
+}
+
+.hero-section > h1, .hero-section > h2 {
+    /* Text */
+    color: white;
+
+    /* Box */
+    padding: 0.2em;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    /* Box */
+    height: auto;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    /* Background */
+    background-color: transparent;
+}
+
+.carousel-item > img, .carousel-item > video {
+    /* Box */
+    min-width: 100vw;
+    min-height: 100%;
+    aspect-ratio: 3 / 1;
+
+    /* Behaviour */
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: cover;
+
+    /* Image */
+    filter: brightness(0.8);
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+#generalInformation {
+    /* Box */
+    margin: 2em 1em 1em;
+}
+
+.information > ul {
+    /* Box */
+    padding-left: 0;
+}
+
+.information > ul > li {
+    /* Box */
+    margin-bottom: 0.5em;
+}
+
+.information > ul > li > img {
+    /* Box */
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.5em;
+
+    /* Behaviour */
+    vertical-align: middle;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.description-n-open-times-n-information {
+    align-items: start;
+}
+.extra-info-n-future-locations {
+    align-items: start;
+}
+
+#menu {
+    /* Box */
+    padding: 1em;
+}
+
+#generalInformation .row {
+    /* Alignment */
+    align-items: unset;
+}
+
+@media (max-width: 800px) {
+    main {
+        padding: 0;
+    }
+
+    .profile-image {
+        /* Box */
+        width: 4rem;
+    }
+
+    #bannerCarousel {
+        /* Box */
+        aspect-ratio: 1.5 / 1;
+    }
+
+    .carousel-item > img, .carousel-item > video {
+        /* Box */
+        aspect-ratio: 1.5 / 1;
+    }
+
+    .navSpacer {
+        /* Box */
+        margin-bottom: 3.8em;
+    }
+
+    .hero-section > h1, .hero-section > h2 {
+        /* Text */
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 700px) {
+    #bannerCarousel > button {
+        /* Box */
+        width: 2em;
+    }
+}
+
+/* CHAT */
+.chat-container {
+    /* Box */
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+
+    /* Position */
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+
+    /* Background */
+    background-color: var(--tintedBackgroundColor);
+
+    /* Border */
+    border-radius: 100%;
+    border: 0.2rem solid var(--darkTintedBackgroundColor);
+
+    /* Behaviour */
+    z-index: 99;
+}
+
+@media (max-width: 800px) {
+    .chat-container {
+        /* Position */
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+.chat-container > a {
+    /* Box */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    /* Alignment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-container > a:hover > img {
+    /* Image */
+    transform: scale(1);
+}
+
+.chat-container > a > img {
+    /* Box */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* Image */
+    transform: scale(0.9);
+
+    /* Transition */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* FOOD ITEMS */
+
+.menu-items {
+    /* Box */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+}
+
+.food-item {
+    /* Box */
+    width: 100%;
+    height: fit-content;
+    padding: 1em;
+    margin-bottom: 1em;
+
+    /* Alignment */
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    gap: 2em;
+    position: relative;
+
+    /* Border */
+    border-radius: 2em;
+    border: 0.2rem solid var(--minorTitleColor);
+}
+
+.food-item .image-container {
+    /* Box */
+    width: 40%;
+    aspect-ratio: 2 / 1;
+    max-width: 25rem;
+
+    /* Behaviour */
+    overflow: hidden;
+
+    /* Border */
+    border-radius: 1em;
+}
+
+@media (max-width: 700px) {
+    .food-item .image-container {
+        /* Box */
+        width: 100%;
+        max-width: unset;
+    }
+}
+
+.food-item .image-container > img {
+    /* Box */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.food-item h2 {
+    /* Text */
+    font-size: 2.3em;
+}
+
+.food-item h3 {
+    /* Text */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.food-item input {
+    /* Box */
+    width: 3em;
+    height: 3em;
+}
+
+.food-item .input-group {
+    --borderColor: var(--minorTitleColor);
+
+    /* Text */
+    font-size: 1rem;
+}
+
+.food-item .input-group-text {
+    /* Box */
+    height: 3em;
+
+    /* Text */
+    font-size: 1.2rem;
+}
+
+.food-item .info {
+    /* alignment */
+    flex-grow: 2;
+}
+
+.food-item .price {
+    /* Box */
+    width: fit-content;
+    height: 100%;
+
+    /* Alignment */
+    display: flex;
+    justify-content: right;
+}
+
+.food-item .extraInfo {
+    /* Box */
+    width: 3em;
+    height: 3em;
+
+    /* Border */
+    border: none;
+
+    /* Position */
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+
+/* Extra food item info */
+#extraInfoModal .media-item > * {
+    /* Box */
+    width: 100%;
+    height: fit-content;
+    padding: 1em;
+    object-fit: cover;
+
+    /* Border */
+    border-radius: 2em;
+}
+
+.logo-button > .extra-info-loading-icon {
+    /* Image */
+    filter: grayscale(1) brightness(1.2);
+}
+
+.primary-image-container {
+    /* Box */
+    width: 100%;
+    aspect-ratio: 2 / 1;
+
+    /* Behaviour */
+    overflow: hidden;
+
+    /* Border */
+    border-radius: 2em;
+}
+
+.primary-image-container > img {
+    /* Box */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .food-item {
+        /* Box */
+        max-width: 90vw;
+    }
+
+    .food-item .image-container {
+        /* Box */
+        width: 100%;
+    }
+
+    .food-item .info {
+        /* Box */
+        width: 100%;
+    }
+
+    #extraInfoModal .media-item > * {
+        /* Box */
+        padding-left: 0;
+        padding-right: 0;
+
+        /* Border */
+        border-radius: 0;
+    }
+
+
+    #extraInfoModal .primary-image-container {
+        /* Border */
+        border-radius: 1em;
+    }
+}

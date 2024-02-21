@@ -1,0 +1,52 @@
+#email {
+    /* Box */
+    width: 50rem;
+    max-width: 100%;
+}
+
+#addStaffForm button {
+    /* Box */
+    max-width: 100%;
+}
+
+.staffMember {
+    /* Box */
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    /* Border */
+    border-radius: 1rem;
+    border: 0.2rem solid var(--majorTitleColor);
+
+    /* Alignment */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.staffMember * {
+    /* Box */
+    margin: 0;
+}
+
+#staffList {
+    /* Box */
+    padding: 0;
+}
+
+.staffMember .info {
+    /* Box */
+    flex-grow: 2;
+
+    /* Alignment */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

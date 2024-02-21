@@ -1,0 +1,32 @@
+CRITICAL - 2023-11-14 14:41:07 --> Undefined property: App\Controllers\HomePage::$load
+in APPPATH/Controllers/HomePage.php on line 9.
+ 1 APPPATH/Controllers/HomePage.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomePage->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 14:41:56 --> syntax error, unexpected end of file
+in APPPATH/Config/Routes.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 14:42:04 --> Undefined property: App\Controllers\HomePage::$load
+in APPPATH/Controllers/HomePage.php on line 9.
+ 1 APPPATH/Controllers/HomePage.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomePage->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 15:31:29 --> Undefined variable $PREV_PAGE
+in APPPATH/Views/Location.php on line 16.
+ 1 APPPATH/Views/Location.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/app/Views/Location.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1197): view()
+ 6 APPPATH/Controllers/LocationController.php(9): viewPage()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\LocationController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

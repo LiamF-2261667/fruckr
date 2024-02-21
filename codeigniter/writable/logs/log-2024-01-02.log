@@ -1,0 +1,21 @@
+ERROR - 2024-01-02 15:05:19 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`fruckr`.`fooditemingredient`, CONSTRAINT `fk_FoodItem_name` FOREIGN KEY (`foodtruck`, `foodName`) REFERENCES `fooditem` (`foodtruck`, `name`)) in /app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/FoodItemModel.php(449): App\Database\DatabaseHandler->query()
+#5 /app/app/Controllers/FoodtruckController.php(216): App\Models\FoodItemModel->delete()
+#6 /app/system/CodeIgniter.php(942): App\Controllers\FoodtruckController->deleteFoodItem()
+#7 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-02 15:05:19 --> Cannot connect to the database. Please try again later.
+in APPPATH/Database/DatabaseHandler.php on line 82.
+ 1 APPPATH/Models/FoodItemModel.php(449): App\Database\DatabaseHandler->query()
+ 2 APPPATH/Controllers/FoodtruckController.php(216): App\Models\FoodItemModel->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->deleteFoodItem()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

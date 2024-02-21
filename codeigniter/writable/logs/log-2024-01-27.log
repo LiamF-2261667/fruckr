@@ -1,0 +1,49 @@
+ERROR - 2024-01-27 15:45:07 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /app/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/FoodtruckModel.php(100): App\Database\DatabaseHandler->query()
+#5 /app/app/Models/FoodtruckModel.php(66): App\Models\FoodtruckModel::getFoodtrucksByQuery()
+#6 /app/app/Models/SearchModel.php(111): App\Models\FoodtruckModel::getFoodtrucksByName()
+#7 /app/app/Models/SearchModel.php(64): App\Models\SearchModel->getFoodtrucksByName()
+#8 /app/app/Controllers/HomepageController.php(55): App\Models\SearchModel->getRecommendedFoodtrucks()
+#9 /app/app/Controllers/HomepageController.php(40): App\Controllers\HomepageController->recommendedFoodtrucks()
+#10 /app/app/Controllers/HomepageController.php(30): App\Controllers\HomepageController->getPageData()
+#11 /app/system/CodeIgniter.php(942): App\Controllers\HomepageController->index()
+#12 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#13 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#14 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /app/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/app/Database/DatabaseHandler.php(76): CodeIgniter\Database\BaseConnection->query()
+#3 /app/app/Models/FoodtruckModel.php(100): App\Database\DatabaseHandler->query()
+#4 /app/app/Models/FoodtruckModel.php(66): App\Models\FoodtruckModel::getFoodtrucksByQuery()
+#5 /app/app/Models/SearchModel.php(111): App\Models\FoodtruckModel::getFoodtrucksByName()
+#6 /app/app/Models/SearchModel.php(64): App\Models\SearchModel->getFoodtrucksByName()
+#7 /app/app/Controllers/HomepageController.php(55): App\Models\SearchModel->getRecommendedFoodtrucks()
+#8 /app/app/Controllers/HomepageController.php(40): App\Controllers\HomepageController->recommendedFoodtrucks()
+#9 /app/app/Controllers/HomepageController.php(30): App\Controllers\HomepageController->getPageData()
+#10 /app/system/CodeIgniter.php(942): App\Controllers\HomepageController->index()
+#11 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#12 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#13 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-01-27 15:45:07 --> Cannot connect to the database. Please try again later.
+in APPPATH/Database/DatabaseHandler.php on line 82.
+ 1 APPPATH/Models/FoodtruckModel.php(100): App\Database\DatabaseHandler->query()
+ 2 APPPATH/Models/FoodtruckModel.php(66): App\Models\FoodtruckModel::getFoodtrucksByQuery()
+ 3 APPPATH/Models/SearchModel.php(111): App\Models\FoodtruckModel::getFoodtrucksByName()
+ 4 APPPATH/Models/SearchModel.php(64): App\Models\SearchModel->getFoodtrucksByName()
+ 5 APPPATH/Controllers/HomepageController.php(55): App\Models\SearchModel->getRecommendedFoodtrucks()
+ 6 APPPATH/Controllers/HomepageController.php(40): App\Controllers\HomepageController->recommendedFoodtrucks()
+ 7 APPPATH/Controllers/HomepageController.php(30): App\Controllers\HomepageController->getPageData()
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\HomepageController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

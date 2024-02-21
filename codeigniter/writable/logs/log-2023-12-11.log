@@ -1,0 +1,71 @@
+INFO - 2023-12-11 13:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 13:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 13:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-11 13:26:29 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /app/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/app/Database/DatabaseHandler.php(73): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/UserModel.php(63): App\Database\DatabaseHandler->query()
+#5 /app/app/Models/UserModel.php(85): App\Models\UserModel->loadByEmail()
+#6 /app/app/Controllers/LoginController.php(80): App\Models\UserModel::getUserByEmail()
+#7 /app/app/Controllers/LoginController.php(67): App\Controllers\LoginController->tryLogin()
+#8 /app/system/CodeIgniter.php(942): App\Controllers\LoginController->login()
+#9 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /app/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/app/Database/DatabaseHandler.php(73): CodeIgniter\Database\BaseConnection->query()
+#3 /app/app/Models/UserModel.php(63): App\Database\DatabaseHandler->query()
+#4 /app/app/Models/UserModel.php(85): App\Models\UserModel->loadByEmail()
+#5 /app/app/Controllers/LoginController.php(80): App\Models\UserModel::getUserByEmail()
+#6 /app/app/Controllers/LoginController.php(67): App\Controllers\LoginController->tryLogin()
+#7 /app/system/CodeIgniter.php(942): App\Controllers\LoginController->login()
+#8 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+INFO - 2023-12-11 13:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-11 13:26:31 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /app/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/app/Database/DatabaseHandler.php(73): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/UserModel.php(63): App\Database\DatabaseHandler->query()
+#5 /app/app/Models/UserModel.php(85): App\Models\UserModel->loadByEmail()
+#6 /app/app/Controllers/LoginController.php(80): App\Models\UserModel::getUserByEmail()
+#7 /app/app/Controllers/LoginController.php(67): App\Controllers\LoginController->tryLogin()
+#8 /app/system/CodeIgniter.php(942): App\Controllers\LoginController->login()
+#9 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /app/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/app/Database/DatabaseHandler.php(73): CodeIgniter\Database\BaseConnection->query()
+#3 /app/app/Models/UserModel.php(63): App\Database\DatabaseHandler->query()
+#4 /app/app/Models/UserModel.php(85): App\Models\UserModel->loadByEmail()
+#5 /app/app/Controllers/LoginController.php(80): App\Models\UserModel::getUserByEmail()
+#6 /app/app/Controllers/LoginController.php(67): App\Controllers\LoginController->tryLogin()
+#7 /app/system/CodeIgniter.php(942): App\Controllers\LoginController->login()
+#8 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+INFO - 2023-12-11 13:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 13:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 13:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 13:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 13:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 13:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 13:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

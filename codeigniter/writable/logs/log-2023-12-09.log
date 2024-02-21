@@ -1,0 +1,778 @@
+ERROR - 2023-12-09 11:01:27 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /app/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/app/Database/DatabaseHandler.php(73): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/FoodtruckModel.php(108): App\Database\DatabaseHandler->query()
+#5 /app/app/Models/FoodtruckModel.php(85): App\Models\FoodtruckModel->loadFoodtruckData()
+#6 /app/app/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+#7 /app/app/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+#8 /app/app/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+#9 /app/system/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+#10 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /app/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/app/Database/DatabaseHandler.php(73): CodeIgniter\Database\BaseConnection->query()
+#3 /app/app/Models/FoodtruckModel.php(108): App\Database\DatabaseHandler->query()
+#4 /app/app/Models/FoodtruckModel.php(85): App\Models\FoodtruckModel->loadFoodtruckData()
+#5 /app/app/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+#6 /app/app/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+#7 /app/app/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+#8 /app/system/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+#9 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-09 11:01:27 --> Cannot connect to the database. Please try again later.
+in APPPATH/Database/DatabaseHandler.php on line 79.
+ 1 APPPATH/Models/FoodtruckModel.php(108): App\Database\DatabaseHandler->query()
+ 2 APPPATH/Models/FoodtruckModel.php(85): App\Models\FoodtruckModel->loadFoodtruckData()
+ 3 APPPATH/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+ 4 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 5 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 11:02:09 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /app/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/app/Database/DatabaseHandler.php(73): CodeIgniter\Database\BaseConnection->query()
+#4 /app/app/Models/FoodtruckModel.php(108): App\Database\DatabaseHandler->query()
+#5 /app/app/Models/FoodtruckModel.php(85): App\Models\FoodtruckModel->loadFoodtruckData()
+#6 /app/app/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+#7 /app/app/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+#8 /app/app/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+#9 /app/system/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+#10 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /app/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/app/Database/DatabaseHandler.php(73): CodeIgniter\Database\BaseConnection->query()
+#3 /app/app/Models/FoodtruckModel.php(108): App\Database\DatabaseHandler->query()
+#4 /app/app/Models/FoodtruckModel.php(85): App\Models\FoodtruckModel->loadFoodtruckData()
+#5 /app/app/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+#6 /app/app/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+#7 /app/app/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+#8 /app/system/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+#9 /app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-09 11:02:09 --> Cannot connect to the database. Please try again later.
+in APPPATH/Database/DatabaseHandler.php on line 79.
+ 1 APPPATH/Models/FoodtruckModel.php(108): App\Database\DatabaseHandler->query()
+ 2 APPPATH/Models/FoodtruckModel.php(85): App\Models\FoodtruckModel->loadFoodtruckData()
+ 3 APPPATH/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+ 4 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 5 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:54:44 --> Unclosed '{' on line 14
+in APPPATH/Views/Foodtruck_Customer.php on line 50.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1204): view()
+ 4 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 5 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 13:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 13:55:33 --> Unclosed '{' on line 14
+in APPPATH/Views/Foodtruck_Customer.php on line 50.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1204): view()
+ 4 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 5 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 13:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 13:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 13:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 13:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 14:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 14:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 14:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 14:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 14:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 14:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 14:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 14:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 14:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 14:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 14:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 14:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 14:22:23 --> Undefined property: stdClass::$type
+in APPPATH/Models/FoodtruckProfileModel.php on line 60.
+ 1 APPPATH/Models/FoodtruckProfileModel.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Models/FoodtruckProfileModel.php(29): App\Models\FoodtruckProfileModel->loadByFoodtruckId()
+ 3 APPPATH/Models/FoodtruckModel.php(97): App\Models\FoodtruckProfileModel::getProfileByFoodtruckKey()
+ 4 APPPATH/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+ 5 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 6 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 15:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 15:14:22 --> Class "BlobData" not found
+in APPPATH/Models/FoodtruckProfileModel.php on line 51.
+ 1 APPPATH/Models/FoodtruckProfileModel.php(31): App\Models\FoodtruckProfileModel->loadByFoodtruckId()
+ 2 APPPATH/Models/FoodtruckModel.php(97): App\Models\FoodtruckProfileModel::getProfileByFoodtruckKey()
+ 3 APPPATH/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+ 4 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 5 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 15:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 15:15:14 --> Class "BlobData" not found
+in APPPATH/Models/FoodtruckProfileModel.php on line 51.
+ 1 APPPATH/Models/FoodtruckProfileModel.php(31): App\Models\FoodtruckProfileModel->loadByFoodtruckId()
+ 2 APPPATH/Models/FoodtruckModel.php(97): App\Models\FoodtruckProfileModel::getProfileByFoodtruckKey()
+ 3 APPPATH/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+ 4 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 5 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 15:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 15:17:39 --> syntax error, unexpected identifier "DataType"
+in APPPATH/DataObjects/DataType.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 APPPATH/Models/FoodtruckProfileModel.php(51): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 APPPATH/Models/FoodtruckProfileModel.php(31): App\Models\FoodtruckProfileModel->loadByFoodtruckId()
+ 5 APPPATH/Models/FoodtruckModel.php(97): App\Models\FoodtruckProfileModel::getProfileByFoodtruckKey()
+ 6 APPPATH/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+ 7 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 8 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 9 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 15:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 15:20:58 --> App\DataObjects\BlobData::__construct(): Argument #2 ($type) must be of type int, string given, called in /app/app/Models/FoodtruckProfileModel.php on line 61
+in APPPATH/DataObjects/BlobData.php on line 24.
+ 1 APPPATH/Models/FoodtruckProfileModel.php(61): App\DataObjects\BlobData->__construct()
+ 2 APPPATH/Models/FoodtruckProfileModel.php(30): App\Models\FoodtruckProfileModel->loadByFoodtruckId()
+ 3 APPPATH/Models/FoodtruckModel.php(97): App\Models\FoodtruckProfileModel::getProfileByFoodtruckKey()
+ 4 APPPATH/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+ 5 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 6 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 15:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 15:29:37 --> syntax error, unexpected token "/"
+in APPPATH/DataObjects/BlobData.php on line 47.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 APPPATH/Models/FoodtruckProfileModel.php(50): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 APPPATH/Models/FoodtruckProfileModel.php(30): App\Models\FoodtruckProfileModel->loadByFoodtruckId()
+ 5 APPPATH/Models/FoodtruckModel.php(97): App\Models\FoodtruckProfileModel::getProfileByFoodtruckKey()
+ 6 APPPATH/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+ 7 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 8 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 9 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 15:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 15:48:22 --> Undefined array key 0
+in APPPATH/Views/Foodtruck_Customer.php on line 31.
+ 1 APPPATH/Views/Foodtruck_Customer.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/app/Views/Foodtruck_Customer.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1204): view()
+ 6 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 7 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 15:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 15:48:28 --> Undefined array key 0
+in APPPATH/Views/Foodtruck_Customer.php on line 31.
+ 1 APPPATH/Views/Foodtruck_Customer.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/app/Views/Foodtruck_Customer.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1204): view()
+ 6 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 7 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 15:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 15:50:49 --> Undefined array key 0
+in APPPATH/Views/Foodtruck_Customer.php on line 31.
+ 1 APPPATH/Views/Foodtruck_Customer.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/app/Views/Foodtruck_Customer.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1204): view()
+ 6 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 7 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 15:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 15:52:32 --> Undefined array key 4
+in APPPATH/Models/FoodtruckProfileModel.php on line 70.
+ 1 APPPATH/Models/FoodtruckProfileModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Models/FoodtruckProfileModel.php(53): App\Models\FoodtruckProfileModel->loadBannerImages()
+ 3 APPPATH/Models/FoodtruckProfileModel.php(30): App\Models\FoodtruckProfileModel->loadByFoodtruckId()
+ 4 APPPATH/Models/FoodtruckModel.php(97): App\Models\FoodtruckProfileModel::getProfileByFoodtruckKey()
+ 5 APPPATH/Models/FoodtruckModel.php(36): App\Models\FoodtruckModel->loadById()
+ 6 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 7 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 15:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 15:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 16:14:06 --> Call to undefined method App\Models\AddressModel::toLongString()
+in APPPATH/Views/Foodtruck_Customer.php on line 69.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 SYSTEMPATH/Common.php(1204): view()
+ 5 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 6 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 16:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 16:15:00 --> Call to undefined method App\Models\AddressModel::toLongString()
+in APPPATH/Views/Foodtruck_Customer.php on line 69.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 SYSTEMPATH/Common.php(1204): view()
+ 5 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 6 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 16:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 16:15:08 --> syntax error, unexpected identifier "String", expecting "," or ";"
+in APPPATH/Views/Foodtruck_Customer.php on line 69.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1204): view()
+ 4 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 5 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 16:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 16:22:20 --> App\Models\FoodtruckModel::getProfileImage(): Return value must be of type ?array, App\DataObjects\BlobData returned
+in APPPATH/Models/FoodtruckModel.php on line 218.
+ 1 APPPATH/Views/Foodtruck_Customer.php(8): App\Models\FoodtruckModel->getProfileImage()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/app/Views/Foodtruck_Customer.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1204): view()
+ 6 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 7 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 16:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 16:22:21 --> App\Models\FoodtruckModel::getProfileImage(): Return value must be of type ?array, App\DataObjects\BlobData returned
+in APPPATH/Models/FoodtruckModel.php on line 218.
+ 1 APPPATH/Views/Foodtruck_Customer.php(8): App\Models\FoodtruckModel->getProfileImage()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/app/Views/Foodtruck_Customer.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1204): view()
+ 6 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 7 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 16:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 16:33:17 --> Call to undefined function getRating()
+in APPPATH/Views/Foodtruck_Customer.php on line 18.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 SYSTEMPATH/Common.php(1204): view()
+ 5 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 6 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 16:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 16:34:06 --> Call to undefined function getRatingString()
+in APPPATH/Views/Foodtruck_Customer.php on line 18.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 SYSTEMPATH/Common.php(1204): view()
+ 5 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 6 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 16:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 16:35:30 --> unlink(/app/writable/debugbar/debugbar_1702139121.867981.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 16:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 16:54:15 --> unlink(/app/writable/debugbar/debugbar_1702140063.459270.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 16:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 16:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 17:20:24 --> Call to undefined method App\Models\FoodtruckModel::getFormattedPhoneNumber()
+in APPPATH/Views/Foodtruck_Customer.php on line 101.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 SYSTEMPATH/Common.php(1204): view()
+ 5 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 6 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 17:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 17:20:25 --> Call to undefined method App\Models\FoodtruckModel::getFormattedPhoneNumber()
+in APPPATH/Views/Foodtruck_Customer.php on line 101.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 SYSTEMPATH/Common.php(1204): view()
+ 5 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 6 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 17:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 17:25:35 --> Unclosed '{' on line 127
+in APPPATH/Views/Foodtruck_Customer.php on line 167.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1204): view()
+ 4 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 5 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 17:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 17:25:35 --> Unclosed '{' on line 127
+in APPPATH/Views/Foodtruck_Customer.php on line 167.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1204): view()
+ 4 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 5 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 17:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 17:27:53 --> Cannot assign string to property App\Models\FutureLocationModel::$startDate of type ?Cassandra\Date
+in APPPATH/Models/FutureLocationModel.php on line 29.
+ 1 APPPATH/Models/FutureLocationModel.php(21): App\Models\FutureLocationModel->loadByQueryResult()
+ 2 APPPATH/Models/FoodtruckModel.php(95): App\Models\FutureLocationModel::getFutureLocationsByFoodtruckId()
+ 3 APPPATH/Models/FoodtruckModel.php(37): App\Models\FoodtruckModel->loadById()
+ 4 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 5 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 17:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 17:29:08 --> Cannot assign array to property App\Models\FutureLocationModel::$startDate of type ?Cassandra\Date
+in APPPATH/Models/FutureLocationModel.php on line 29.
+ 1 APPPATH/Models/FutureLocationModel.php(21): App\Models\FutureLocationModel->loadByQueryResult()
+ 2 APPPATH/Models/FoodtruckModel.php(95): App\Models\FutureLocationModel::getFutureLocationsByFoodtruckId()
+ 3 APPPATH/Models/FoodtruckModel.php(37): App\Models\FoodtruckModel->loadById()
+ 4 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 5 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 17:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 17:31:17 --> Undefined property: stdClass::$address
+in APPPATH/Models/FutureLocationModel.php on line 30.
+ 1 APPPATH/Models/FutureLocationModel.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Models/FutureLocationModel.php(21): App\Models\FutureLocationModel->loadByQueryResult()
+ 3 APPPATH/Models/FoodtruckModel.php(95): App\Models\FutureLocationModel::getFutureLocationsByFoodtruckId()
+ 4 APPPATH/Models/FoodtruckModel.php(37): App\Models\FoodtruckModel->loadById()
+ 5 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 6 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 17:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 17:31:51 --> Undefined property: stdClass::$address
+in APPPATH/Models/FutureLocationModel.php on line 30.
+ 1 APPPATH/Models/FutureLocationModel.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Models/FutureLocationModel.php(21): App\Models\FutureLocationModel->loadByQueryResult()
+ 3 APPPATH/Models/FoodtruckModel.php(95): App\Models\FutureLocationModel::getFutureLocationsByFoodtruckId()
+ 4 APPPATH/Models/FoodtruckModel.php(37): App\Models\FoodtruckModel->loadById()
+ 5 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 6 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 17:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 17:32:00 --> Undefined property: stdClass::$address
+in APPPATH/Models/FutureLocationModel.php on line 29.
+ 1 APPPATH/Models/FutureLocationModel.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Models/FutureLocationModel.php(20): App\Models\FutureLocationModel->loadByQueryResult()
+ 3 APPPATH/Models/FoodtruckModel.php(95): App\Models\FutureLocationModel::getFutureLocationsByFoodtruckId()
+ 4 APPPATH/Models/FoodtruckModel.php(37): App\Models\FoodtruckModel->loadById()
+ 5 APPPATH/Controllers/FoodtruckController.php(37): App\Models\FoodtruckModel::getFoodtruckById()
+ 6 APPPATH/Controllers/FoodtruckController.php(22): App\Controllers\FoodtruckController->loadFoodtruck()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 17:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 17:33:09 --> Call to a member function format() on string
+in APPPATH/Views/Foodtruck_Customer.php on line 140.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 SYSTEMPATH/Common.php(1204): view()
+ 5 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 6 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 17:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 17:49:49 --> unlink(/app/writable/debugbar/debugbar_1702143418.011558.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(80): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(476): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\Events\Events::trigger()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 17:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 17:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-09 20:16:48 --> Call to undefined function App\Models\camelize()
+in APPPATH/Models/AddressModel.php on line 166.
+ 1 APPPATH/Views/Foodtruck_Customer.php(96): App\Models\AddressModel->toGoogleLink()
+ 2 SYSTEMPATH/View/View.php(228): include('/app/app/Views/Foodtruck_Customer.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1204): view()
+ 6 APPPATH/Controllers/BaseController.php(76): viewPage()
+ 7 APPPATH/Controllers/FoodtruckController.php(25): App\Controllers\BaseController->viewingPage()
+ 8 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\FoodtruckController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-09 20:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 20:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 21:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 21:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-09 21:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
